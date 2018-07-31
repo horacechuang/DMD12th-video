@@ -1,0 +1,155 @@
+
+/* sourcehansans-tc-extralight, sourcehansans-tc-regular, sourcehansans-tc-bold */
+
+/* Reset CSS */
+@import url("reset.css");
+
+@font-face {
+	font-family: 'CenturyGothic';
+	src:url('../fonts/CenturyGothic/CenturyGothic.eot');
+	src:url('../fonts/CenturyGothic/CenturyGothic.eot#iefix') format('embedded-opentype'),
+		url('../fonts/CenturyGothic/CenturyGothic.woff') format('woff'),
+		url('../fonts/CenturyGothic/CenturyGothic.ttf') format('truetype'),
+		url('../fonts/CenturyGothic/CenturyGothic.svg#CenturyGothic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CenturyGothic-Bold';
+	src:url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold.eot');
+	src:url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold.eot#iefix') format('embedded-opentype'),
+		url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold.woff') format('woff'),
+		url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold.ttf') format('truetype'),
+		url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold.svg#CenturyGothic-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CenturyGothic-BoldItalic';
+	src:url('../fonts/CenturyGothic-BoldItalic/CenturyGothic-BoldItalic.eot');
+	src:url('../fonts/CenturyGothic-BoldItalic/CenturyGothic-BoldItalic.eot#iefix') format('embedded-opentype'),
+		url('../fonts/CenturyGothic-BoldItalic/CenturyGothic-BoldItalic.woff') format('woff'),
+		url('../fonts/CenturyGothic-BoldItalic/CenturyGothic-BoldItalic.ttf') format('truetype'),
+		url('../fonts/CenturyGothic-BoldItalic/CenturyGothic-BoldItalic.svg#CenturyGothic-BoldItalic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'CenturyGothic-Italic';
+	src:url('../fonts/CenturyGothic-Italic/CenturyGothic-Italic.eot');
+	src:url('../fonts/CenturyGothic-Italic/CenturyGothic-Italic.eot#iefix') format('embedded-opentype'),
+		url('../fonts/CenturyGothic-Italic/CenturyGothic-Italic.woff') format('woff'),
+		url('../fonts/CenturyGothic-Italic/CenturyGothic-Italic.ttf') format('truetype'),
+		url('../fonts/CenturyGothic-Italic/CenturyGothic-Italic.svg#CenturyGothic-Italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    font-family: CenturyGothic, sourcehansans-tc-extralight, 微軟正黑體, Microsoft JhengHei, sans-serif;
+}
+
+body#protect-html {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+/* 多媒體 & 遊戲 */
+button#trigger-overlay {
+    background: url("../images/menuBtn_bg.png"), rgba(230,30,135,0.9);
+    color: rgba(255,255,255,1);
+    outline: none;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 100px rgba(255,255,255,1);
+    z-index: 1;
+}
+
+
+#header {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    z-index: -1;
+    padding-top: 100px;
+}
+
+.header-game {
+    background: url("../images/header-bg-game.png");
+}
+
+.header-multimedia {
+    background: url("../images/header-bg-video-multimedia.png");
+}
+
+.animation-title {
+    font-size: 1.5em;
+    font-family: CenturyGothic-Bold, sourcehansans-tc-bold, 微軟正黑體, Microsoft JhengHei, sans-serif;
+    text-align: center;
+    color: rgba(255,255,255,1);
+    letter-spacing: 3px;
+    border: 5px solid rgba(255,255,255,1);
+    background: rgba(230,30,135,0.85);
+    width: 330px;
+    height: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-shadow: 0px 0px 50px rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 70px rgba(0,0,0,0.7);
+    margin: 0 auto;
+}
+
+section#header-intro {
+    width: auto;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+section#header-intro > p#intro-b {
+    font-family: CenturyGothic, sourcehansans-tc-extralight, 微軟正黑體, Microsoft JhengHei, sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: justify;
+    color: rgba(230,30,135,1);
+    line-height: 31px;
+    letter-spacing: 1.5px;
+}
+
+footer#footer-b {
+    background: rgba(230,30,135,0.7);
+    padding: 15px 0 15px 0;
+    color: rgba(255,255,255,1);
+    font-family: CenturyGothic-BoldItalic, sourcehansans-tc-regular, 微軟正黑體, Microsoft JhengHei, sans-serif;
+    font-size: 0.95em;
+    text-align: center;
+    letter-spacing: 0.75px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer#footer-b a {
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+}
+
+footer#footer-b a:hover {
+    text-decoration: underline;
+}
